@@ -1,0 +1,221 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "fredoka";
+}
+
+.main{
+    background-color: #ffe083;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.main button{
+    background-color: #ff7152;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 50px;
+    width: 350px;
+    margin: 30px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.click{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* 
+DESCRIPTION: The styles for page 2 of the QUIZ-2 project.
+*/
+.page2-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box1{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top: -130px;
+}
+.box1 img{
+    align-self: center;
+}
+
+.box1 h1{
+    font-size: 70px;
+    position: relative;
+    top: -30px;
+}
+.box1 h5{
+    font-size: 30px;
+    position: relative;
+    top: -20px;
+    color: #2e2e2e;
+}
+.page2-main{
+    height: 100vh;
+}
+
+/*
+DESCRIPTION: The styles for page 3 of the question.
+*/
+.box2{
+    height: 200px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: -250px;
+
+}
+
+.option{
+    background-color:#ffd75f;
+    height: 60px;
+    width: 230px;
+    border-radius: 30px;
+    border: 3px solid black;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 25px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option:hover{
+    background-color: #eae4e2;
+    color: white;
+}
+
+#btn:hover{
+    background-color: #eae4e2;
+    
+}
+.page5-btn{
+    background-color:#ff7152;
+    height: 60px;
+    width: 230px;
+    border-radius: 30px;
+    border: 3px solid black;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 25px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -250px;
+    left: 1000px;
+}
+
+.archor{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/*
+DESCRIPTION: The styles for the results when you do well.
+*/
+.good-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.good-score-1{
+    background-color:#ffe083;
+    height: 100vh;
+}
+.good-score img{
+    position: relative;
+    top:-80px;
+}
+.good-score h1{
+    font-size: 150px;
+    color: #53bc80;
+    position: relative;
+    top: -150px;
+    left: 40px;
+}
+.good-score h5{
+    color: #ffffff;
+    font-size: 50px;
+    position: relative;
+    top: -150px;
+    left: 40px;
+}
+
+.score{
+    margin: 30px;
+    background-color:#ff7152;
+    height: 60px;
+    width: 230px;
+    border-radius: 30px;
+    border: 3px solid black;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 25px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+    left: 150px;
+}
+
+/*
+DESCRIPTION: The styles for the results when you don't well.
+*/
+.bad-score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.bad-score-1{
+    background-color:#b597ff;
+    height: 100vh;
+}
+.bad-score img{
+    position: relative;
+    top:-80px;
+}
+.bad-score h1{
+    font-size: 150px;
+    color:#ff7152;
+    position: relative;
+    top: -150px;
+    left: 40px;
+}
+.bad-score h5{
+    color: #ffffff;
+    font-size: 50px;
+    position: relative;
+    top: -150px;
+    left: 40px;
+}
+
