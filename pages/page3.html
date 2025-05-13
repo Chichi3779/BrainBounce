@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainBounce</title>
+    <link rel="icon" href="/images/brainBOUNCE-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="/style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="page2-main">
+        <img src="/images/brainBOUNCE-removebg-preview.png" width="250px">
+        <div class="page2-box">
+            <div class="box1">
+            <img src="/images/Iconos gratuitos de Pizarra diseñados por Freepik.jpeg" alt="" height="200px" width="200px">
+            <h1>Question 3</h1>
+            <h5>How many legs does a spider have?</h5>
+        </div>
+        <div class="box2">
+            <div class="mini1">
+                <div class="option" data-answer="A"><h5>4</h5></div>
+                <div class="option" data-answer="B"><h5>8</h5></div>
+            </div>
+            <div class="mini2">
+                <div class="option" data-answer="C"><h5>6</h5></div>
+                <div class="option" data-answer="D"><h5>10</h5></div>
+            </div>
+        </div>
+
+        </div>
+        <a onclick="nextQuestion()" class="archor" target="_self" id="btn"><div class="page5-btn"><h5>Next</h5></div></a>
+    </section>
+
+    <script>
+  let selectedAnswer = null;
+
+document.querySelectorAll('.option').forEach(option => {
+  option.addEventListener('click', () => {
+    document.querySelectorAll('.option').forEach(opt => opt.classList.remove('selected'));
+    option.classList.add('selected');
+    selectedAnswer = option.getAttribute('data-answer');
+  });
+});
+
+function nextQuestion() {
+  if (!selectedAnswer) {
+    alert("Choose an answer!");
+    return;
+  }
+
+  // Save selectedAnswer
+  const answers = JSON.parse(localStorage.getItem('quizAnswers')) || [];
+  answers.push(selectedAnswer);
+  localStorage.setItem('quizAnswers', JSON.stringify(answers));
+
+
+    // Go to next question
+    window.location.href = 'page4.html';
+  }
+</script>
+</body>
+</html>
